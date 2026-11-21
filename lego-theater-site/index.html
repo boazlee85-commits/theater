@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brick Cinema</title>
+  <meta name="description" content="Movies, tickets and adverts for our LEGO theater.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="promoBar" class="promo-bar" hidden></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand"><span id="logo" class="logo-brick">🧱</span><span id="brandName">Brick Cinema</span></a>
+    <nav>
+      <a href="#now-showing">Now Showing</a>
+      <a href="#coming-soon">Coming Soon</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Featured adverts">
+      <div id="carousel" class="carousel"></div>
+      <div id="dots" class="dots"></div>
+    </section>
+
+    <section id="now-showing" class="section">
+      <h2 class="section-title"><span class="stud red"></span>Now Showing</h2>
+      <div id="nowGrid" class="grid"></div>
+    </section>
+
+    <section id="coming-soon" class="section">
+      <h2 class="section-title"><span class="stud blue"></span>Coming Soon</h2>
+      <div id="soonGrid" class="grid"></div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <h2 class="section-title"><span class="stud green"></span>Visit Us</h2>
+      <p id="aboutText"></p>
+      <ul id="visitList" class="visit-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div id="footerText"></div>
+  </footer>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
